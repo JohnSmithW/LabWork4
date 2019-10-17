@@ -1,0 +1,138 @@
+body {
+  background-color: azure;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  height: 4vmax;
+  background-color: rgba(238, 238, 238, 0.349);
+  margin-right: 2%;
+  margin-left: 2%;
+  border: 2px solid black;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.top-block img {
+  width: 80%;
+}
+
+.top-block:hover {
+  transform: scale(1.1);
+}
+
+.main-content {
+  display: flex;
+  margin-top: 2%;
+}
+
+aside {
+  border: 2px solid black;
+}
+
+.side-box {
+  width: 25%;
+  height: 40vmax;
+  background-color: rgba(238, 238, 238, 0.349);
+  margin-left: 2%;
+  font-size: 1vmax;
+}
+
+.side-box h1 {
+  margin-left: 5%;
+}
+
+.main-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.for-sale-item {
+  background-color: rgba(238, 238, 238, 0.349);
+  width: 20%;
+  margin: 2%;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.438);
+}
+
+.for-sale-item img {
+  width: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  margin-top: 5%;
+  transition-duration: 0.5s;
+}
+
+p {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(240, 133, 11);
+}
+
+.for-sale-item img:hover {
+  transform: scale(1.1);
+}
+
+.for-sale-item-current {
+  background-color: rgba(238, 238, 238, 0.349);
+  width: 90%;
+  height: 30vmax;
+  margin-left: 2%;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.438);
+  display: flex;
+}
+
+.for-sale-item-current img {
+  width: 20vw;
+  height: 50vh;
+  border: 2px solid rgb(0, 0, 0);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.item-text {
+  width: 60vw;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.item-text p {
+  color: black;
+  font-size: 1vmax;
+}
+
+.price-item {
+  display: flex;
+  text-align: center;
+}
+
+span {
+  cursor: pointer;
+  font-size: 1vmax;
+}
+
+span:hover {
+  color: rgb(240, 133, 11);
+}
+
+.suggestions {
+  margin-left: 1.7vmax;
+}
