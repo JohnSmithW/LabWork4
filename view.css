@@ -41,7 +41,7 @@ aside {
 }
 
 .side-box {
-  width: 25%;
+  width: 12.1%;
   height: 40vmax;
   background-color: rgba(238, 238, 238, 0.349);
   margin-left: 2%;
@@ -55,6 +55,7 @@ aside {
 .main-blocks {
   display: flex;
   flex-wrap: wrap;
+  width: 97.1%;
 }
 
 .for-sale-item {
@@ -70,6 +71,7 @@ aside {
   border: 2px solid rgb(0, 0, 0);
   margin-top: 5%;
   transition-duration: 0.5s;
+  cursor: pointer;
 }
 
 p {
