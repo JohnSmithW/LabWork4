@@ -4,7 +4,7 @@ body {
   margin: 2%;
 }
 
-h2{
+h2 {
   margin-left: 2%;
 }
 
@@ -21,7 +21,7 @@ h2{
   display: flex;
   border: 2px solid black;
   width: 100%;
-  height:3vmax;
+  height: 3vmax;
   align-items: center;
   background-color: white;
   padding-left: 2%;
@@ -30,30 +30,32 @@ h2{
 .access-box {
   border: 2px solid black;
   width: 100%;
-  height:15vmax;
+  height: 15vmax;
   margin-top: 2%;
   background-color: white;
   padding-left: 2%;
   font-size: 1.2vmax;
 }
 
-.file{
+.file {
   display: flex;
   justify-content: space-between;
-  margin:1%;
+  margin: 1%;
 }
 
-.file span{
-  margin-right:3%;
+.file span {
+  margin-right: 3%;
   color: rgba(0, 0, 0, 0.466);
 }
 
-.selected{
-  background-color: rgb(123, 205, 243) ;
+.selected {
+  background-color: rgb(123, 205, 243);
 }
-.none{
+
+.none {
   display: none;
 }
-.active{
+
+.active {
   opacity: 1;
 }

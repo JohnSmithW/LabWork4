@@ -1,5 +1,5 @@
 body {
-  background-color: azure;
+  background-color: white;
   font-family: 'M PLUS 1p', sans-serif;
 }
 
@@ -16,15 +16,24 @@ body {
   width: 12%;
   height: 4vmax;
   background-color: rgba(238, 238, 238, 0.349);
+  margin-top: 1%;
   margin-right: 2%;
   margin-left: 2%;
-  border: 2px solid black;
   cursor: pointer;
   transition-duration: 0.5s;
 }
 
-.top-block img {
-  width: 80%;
+.logo-block:after {
+  content: "";
+  background-image: url('images/logo.png');
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  width: 18vmax;
+  height: 2vmax;
+}
+
+.cart-block:hover {
+  background-color: rgb(233, 53, 53);
 }
 
 .top-block:hover {
@@ -36,45 +45,60 @@ body {
   margin-top: 2%;
 }
 
-aside {
-  border: 2px solid black;
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.navigation a {
+  color: black;
+  width: 90%;
+  font-size: 130%;
+}
+
+.navigation a:hover {
+  color: black;
+  background-color: rgb(233, 53, 53);
 }
 
 .side-box {
   width: 25%;
   height: 40vmax;
-  background-color: rgba(238, 238, 238, 0.349);
+  background-color: rgb(247, 247, 247);
   margin-left: 2%;
   font-size: 1vmax;
 }
 
 .side-box h1 {
+  text-align: center;
   margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 2px solid black;
 }
 
-.main-blocks {
+.item-blocks {
   display: flex;
   flex-wrap: wrap;
   margin-left: 10%;
 }
 
-.for-sale-item {
-  background-color: rgba(238, 238, 238, 0.349);
+.item {
+  background-color: rgb(247, 247, 247);
   width: 30%;
   margin: 2%;
   text-align: center;
-  border: 2px solid rgba(0, 0, 0, 0.438);
 }
 
-.for-sale-item img {
+.item img {
   width: 50%;
-  border: 2px solid rgb(0, 0, 0);
   margin-top: 5%;
   transition-duration: 0.5s;
 }
 
 p {
   color: red;
+  font-size: 1vmax;
 }
 
 a {
@@ -84,30 +108,11 @@ a {
 }
 
 a:hover {
-  color: rgb(240, 133, 11);
+  color: rgb(233, 53, 53);
 }
 
-.for-sale-item img:hover {
+.item img:hover {
   transform: scale(1.1);
-}
-
-.for-sale-item-current {
-  background-color: rgba(238, 238, 238, 0.349);
-  width: 90%;
-  height: 30vmax;
-  margin-left: 2%;
-  text-align: center;
-  border: 2px solid rgba(0, 0, 0, 0.438);
-  display: flex;
-}
-
-.for-sale-item-current img {
-  width: 20vw;
-  height: 50vh;
-  border: 2px solid rgb(0, 0, 0);
-  margin-top: 5%;
-  margin-left: 5%;
-  transition-duration: 0.5s;
 }
 
 .item-text {
@@ -132,9 +137,6 @@ span {
 }
 
 span:hover {
-  color: rgb(240, 133, 11);
-}
-
-.suggestions {
-  margin-left: 1.7vmax;
+  color: black;
+  background-color: rgb(233, 53, 53);
 }

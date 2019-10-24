@@ -1,22 +1,22 @@
 var file = document.querySelectorAll('.active #left .file');
 var fileSide = document.querySelectorAll('.active #right .file');
-var BoxInAction = document.querySelectorAll('.main-block');
+var boxInAction = document.querySelectorAll('.main-block');
 var fileNumb = 0;
 var fileSideNumb = 0;
 var boxNumb = 0;
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', function(e) {
   switch (e.keyCode) {
     case 37:
-      BoxInAction[0].classList.add('active');
-      BoxInAction[1].classList.remove('active');
+      boxInAction[0].classList.add('active');
+      boxInAction[1].classList.remove('active');
       file[fileNumb].classList.add('selected');
       fileSide[fileSideNumb].classList.remove('selected');
       boxNumb = 0;
       break;
     case 39:
-      BoxInAction[0].classList.remove('active');
-      BoxInAction[1].classList.add('active');
+      boxInAction[0].classList.remove('active');
+      boxInAction[1].classList.add('active');
       fileSide[fileSideNumb].classList.add('selected');
       file[fileNumb].classList.remove('selected');
       boxNumb = 1;
@@ -24,7 +24,7 @@ document.addEventListener('keydown', function (e) {
   }
 })
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', function(e) {
   if (e.code === 'ArrowDown' && boxNumb === 0) {
     for (let i = 0; i < file.length; i++) {
       file[i].classList.remove('selected');
@@ -37,7 +37,7 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', function(e) {
   if (e.code === 'ArrowUp' && boxNumb === 0) {
     for (let i = 0; i < file.length; i++) {
       file[i].classList.remove('selected');
@@ -51,7 +51,7 @@ document.addEventListener('keydown', function (e) {
 });
 
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', function(e) {
   if (e.code === 'ArrowDown' && boxNumb === 1) {
     for (let i = 0; i < fileSide.length; i++) {
       fileSide[i].classList.remove('selected');
@@ -64,7 +64,7 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', function(e) {
   if (e.code === 'ArrowUp' && boxNumb === 1) {
     for (let i = 0; i < fileSide.length; i++) {
       fileSide[i].classList.remove('selected');
