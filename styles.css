@@ -32,8 +32,23 @@ body {
   height: 2vmax;
 }
 
+.cart-block {
+  color: white;
+  background-color: black;
+}
+
+.cart-block::after {
+  content: "";
+  background-image: url('images/cart.png');
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  width: 2vmax;
+  height: 2vmax;
+}
+
 .cart-block:hover {
   background-color: rgb(233, 53, 53);
+  color: black;
 }
 
 .top-block:hover {

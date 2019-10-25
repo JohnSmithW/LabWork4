@@ -36,8 +36,14 @@ body {
   height: 2vmax;
 }
 
+.cart-block {
+  color: white;
+  background-color: black;
+}
+
 .cart-block:hover {
   background-color: rgb(233, 53, 53);
+  color: black;
 }
 
 .top-block:hover {
@@ -88,11 +94,10 @@ body {
 }
 
 .item {
-  background-color: rgba(238, 238, 238, 0.349);
+  background-color: rgba(238, 238, 238, 0.589);
   width: 20%;
   margin: 2%;
   text-align: center;
-  border: 2px solid rgba(0, 0, 0, 0.11);
 }
 
 .item img {
@@ -121,12 +126,11 @@ a:hover {
 }
 
 .item-current {
-  background-color: rgba(238, 238, 238, 0.349);
+  background-color: rgba(238, 238, 238, 0.589);
   width: 90%;
   height: 33vmax;
   margin-left: 2%;
   text-align: center;
-  border: 2px solid rgba(0, 0, 0, 0.11);
   display: flex;
 }
 
